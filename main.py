@@ -19,7 +19,7 @@ import os
 import platform
 import pandas as pd
 import numpy as np
-
+import time
 # IMPORT / GUI AND MODULES AND WIDGETS
 # ///////////////////////////////////////////////////////////////
 from modules import *
@@ -30,8 +30,16 @@ os.environ["QT_FONT_DPI"] = "96" # FIX Problem for High DPI and Scale above 100%
 # ///////////////////////////////////////////////////////////////
 widgets = None
 
+
+class AlertWindow(QMessageBox):
+    def __init__(self, text):
+        super().__init__()
+        QMessageBox.about(self, "test",text)
+
+
 class MainWindow(QMainWindow):
     def __init__(self):
+        self.w = None
         QMainWindow.__init__(self)
 
         # SET AS GLOBAL WIDGETS
@@ -138,12 +146,13 @@ class MainWindow(QMainWindow):
 
         if btnName == "btn_save":
             print("Save BTN clicked!")
-            import cli
-            cli.SEMA(file_path=self.filename).process_analysis_gui()
+            inference(self.filename)
+            QMessageBox.about(self, "합성", """
+                합성 종료
+            """)
 
         if btnName == "pushButton":
             print("Open BTN clicked!")
-
             self.filename = QFileDialog.getOpenFileName(self)[0]
             UIFunctions.resetStyle(self, btnName)
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
@@ -186,6 +195,12 @@ class MainWindow(QMainWindow):
             print('Mouse click: LEFT CLICK')
         if event.buttons() == Qt.RightButton:
             print('Mouse click: RIGHT CLICK')
+
+def inference(file_name):
+    import cli
+    cli.SEMA(file_path=file_name).process_analysis_gui()
+
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

@@ -75,6 +75,7 @@ class SEMA:
             n_classes=len(LABEL_COLUMNS),
             config=self.config)
         self.new_model.eval()
+        self.progress = False
 
     def find_file_list(self):
         """Finding files for inference
@@ -135,18 +136,15 @@ class SEMA:
     def save_output(self, file: str = None):
         """Saving Outputs in Excel"""
         self.logger.info('Saving the Final Result...')
-        engines = ['openpyxl', 'xlsxwriter']
-        
         tmp_file_path = self.file_path.split("/")
-        file_path = ''.join(tmp_file_path[:-2]) + '/output/' + tmp_file_path[-1].split(".")[0] + '_output.xlsx'
-        
+        file_path = '/'.join(tmp_file_path[:-2]) + '/output/' + tmp_file_path[-1].split(".")[0] + '_output.xlsx'
+
+        engines = ['openpyxl', 'xlsxwriter']
         for engine in engines:
-            # noinspection PyBroadException
-#            try:
-            self.voc_testset.fillna('').astype(str).to_excel(file_path,
-                encoding='utf-8-sig', engine=engine)
-#            except:
-#                continue
+            try:
+                self.voc_testset.fillna('').astype(str).to_excel(file_path, encoding='utf-8-sig', engine=engine)
+            except:
+               continue
 
     def process_analysis(self):
         "Run all the methods for all files"
@@ -164,6 +162,7 @@ class SEMA:
     
     def process_analysis_gui(self):
         "Run all the methods for all files"
+        self.progress = 0
         self.logger.info('Working on ' + self.file_path + '...')
         voc_testset = VOC_Data_Transform(file=self.file_path).transform()
         self.trainer_setup(voc_testset)

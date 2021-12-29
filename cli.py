@@ -136,11 +136,14 @@ class SEMA:
         """Saving Outputs in Excel"""
         self.logger.info('Saving the Final Result...')
         engines = ['openpyxl', 'xlsxwriter']
+        
+        tmp_file_path = self.file_path.split("/")
+        file_path = ''.join(tmp_file_path[:-2]) + '/output/' + tmp_file_path[-1].split(".")[0] + '_output.xlsx'
+        
         for engine in engines:
             # noinspection PyBroadException
 #            try:
-            self.voc_testset.fillna('').astype(str).to_excel(
-                self.directory + '/output/' + file + '_output.xlsx',
+            self.voc_testset.fillna('').astype(str).to_excel(file_path,
                 encoding='utf-8-sig', engine=engine)
 #            except:
 #                continue

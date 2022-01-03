@@ -116,7 +116,10 @@ class MainWindow(QMainWindow):
         # ///////////////////////////////////////////////////////////////
         widgets.stackedWidget.setCurrentWidget(widgets.home)
         widgets.btn_home.setStyleSheet(UIFunctions.selectMenu(widgets.btn_home.styleSheet()))
-
+        widgets.home.setStyleSheet("background-image: url(images/images/sema-back.png);\n"
+                                   "background-position: center;\n"
+                                   "background-repeat: no-repeat;\n"
+                                   "background-color: #1449a2;")
 
     # BUTTONS CLICK
     # Post here your functions for clicked buttons
@@ -205,5 +208,6 @@ def inference(file_name):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     app.setWindowIcon(QIcon("icon.ico"))
+
     window = MainWindow()
     sys.exit(app.exec_())

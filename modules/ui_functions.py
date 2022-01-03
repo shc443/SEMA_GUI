@@ -211,7 +211,7 @@ class UIFunctions(MainWindow):
             str = open(file, 'r').read()
             self.ui.styleSheet.setStyleSheet(str)
 
-    # START - GUI DEFINITIONS
+    # STAtopLogoRT - GUI DEFINITIONS
     # ///////////////////////////////////////////////////////////////
     def uiDefinitions(self):
         def dobleClickMaximizeRestore(event):

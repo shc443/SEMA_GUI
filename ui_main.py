@@ -1,33 +1,38 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'maingnxZcz.ui'
+## Form generated from reading UI file 'main.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.0.2
+## Created by: Qt User Interface Compiler version 6.2.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide6.QtCore import *
-from PySide6.QtGui import *
-from PySide6.QtWidgets import *
-
-from . resources_rc import *
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QAbstractItemView, QAbstractScrollArea, QApplication, QCheckBox,
+    QComboBox, QCommandLinkButton, QFrame, QGridLayout,
+    QHBoxLayout, QHeaderView, QLabel, QLineEdit,
+    QMainWindow, QPlainTextEdit, QPushButton, QRadioButton,
+    QScrollArea, QScrollBar, QSizePolicy, QSlider,
+    QStackedWidget, QTableWidget, QTableWidgetItem, QTextEdit,
+    QVBoxLayout, QWidget)
+import resources_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1280, 720)
+        MainWindow.resize(1878, 1027)
         MainWindow.setMinimumSize(QSize(940, 560))
         self.styleSheet = QWidget(MainWindow)
-        # self.filedialog.setObjectName(u"styleSheet")
-        #
-        # self.filedialog = QFileDialog(MainWindow)
-        # self.filedialog.setObjectName(u"filedialog")
-
+        self.styleSheet.setObjectName(u"styleSheet")
         font = QFont()
-        font.setFamily(u"Segoe UI")
         font.setPointSize(10)
         font.setBold(False)
         font.setItalic(False)
@@ -54,7 +59,7 @@ class Ui_MainWindow(object):
 "	background-position: left center;\n"
 "    background-repeat: no-repeat;\n"
 "	border: none;\n"
-"	border-left: 2px solid rgb(20, 73, 162);\n"
+"	border-left: 2px solid rgb(255, 121, 198);\n"
 "	text-align: left;\n"
 "	padding-left: 8px;\n"
 "	margin: 0px;\n"
@@ -75,12 +80,12 @@ class Ui_MainWindow(object):
 "}\n"
 "#topLogo {\n"
 "	background-color: rgb(33, 37, 43);\n"
-"	background-image: url(:/images/images/PyDracula.png);\n"
+"	background-image: url(:/images/images/images/PyDracula.png);\n"
 "	background-position: centered;\n"
 "	background-repeat: no-repeat;\n"
 "}\n"
 "#titleLeftApp { font: 63 12pt \"Segoe UI Semibold\"; }\n"
-"#titleLeftDescription { font: 8pt \"Segoe UI\"; color: rgb(120, 163, 255); }\n"
+"#titleLeftDescription { font: 8pt \"Segoe UI\"; color: rgb(189, 147, 249); }\n"
 "\n"
 "/* MENUS */\n"
 "#topMenu .QPushButton {	\n"
@@ -96,7 +101,8 @@ class Ui_MainWindow(object):
 "	background-color: rgb(40, 44, 52);\n"
 "}\n"
 "#topMenu .QPushButton:pressed {	\n"
-"	background-color: rgb(120, 163, 255);\n"
+"	background-color: rgb(18"
+                        "9, 147, 249);\n"
 "	color: rgb(255, 255, 255);\n"
 "}\n"
 "#bottomMenu .QPushButton {	\n"
@@ -112,7 +118,7 @@ class Ui_MainWindow(object):
 "	background-color: rgb(40, 44, 52);\n"
 "}\n"
 "#bottomMenu .QPushButton:pressed {	\n"
-"	background-color: rgb(120, 163, 255);\n"
+"	background-color: rgb(189, 147, 249);\n"
 "	color: rgb(255, 255, 255);\n"
 "}\n"
 "#leftMenuFrame{\n"
@@ -134,7 +140,8 @@ class Ui_MainWindow(object):
 "	background-color: rgb(40, 44, 52);\n"
 "}\n"
 "#toggleButton:pressed {\n"
-"	background-color: rgb(120, 163, 255);\n"
+"	background-color: rgb("
+                        "189, 147, 249);\n"
 "}\n"
 "\n"
 "/* Title Menu */\n"
@@ -147,7 +154,7 @@ class Ui_MainWindow(object):
 "	background-color: rgb(44, 49, 58);\n"
 "}\n"
 "#extraTopBg{	\n"
-"	background-color: rgb(120, 163, 255)\n"
+"	background-color: rgb(189, 147, 249)\n"
 "}\n"
 "\n"
 "/* Icon */\n"
@@ -162,12 +169,13 @@ class Ui_MainWindow(object):
 "\n"
 "/* Btn Close */\n"
 "#extraCloseColumnBtn { background-color: rgba(255, 255, 255, 0); border: none;  border-radius: 5px; }\n"
-"#extraCloseColumnBtn:hover { background-color: rgb(120, 163, 255); border-style: solid; border-radius: 4px; }\n"
-"#extraCloseColumnBtn:pressed { background-color: rgb(120, 163, 255); border-style: solid; border-radius: 4px; }\n"
+"#extraCloseColumnBtn:hover { background-color: rgb(196, 161, 249); border-style: solid; border-radius: 4px; }\n"
+"#extraCloseColumnBtn:pressed { background-color: rgb(180, 141, 238); border-style: solid; border-radius: 4px; }\n"
 "\n"
 "/* Extra Content */\n"
 "#extraContent{\n"
-"	border-top: 3px solid rgb(40, 44, 52);\n"
+"	border"
+                        "-top: 3px solid rgb(40, 44, 52);\n"
 "}\n"
 "\n"
 "/* Extra Top Menus */\n"
@@ -184,7 +192,7 @@ class Ui_MainWindow(object):
 "	background-color: rgb(40, 44, 52);\n"
 "}\n"
 "#extraTopMenu .QPushButton:pressed {	\n"
-"	background-color: rgb(120, 163, 255);\n"
+"	background-color: rgb(189, 147, 249);\n"
 "	color: rgb(255, 255, 255);\n"
 "}\n"
 "\n"
@@ -205,7 +213,7 @@ class Ui_MainWindow(object):
 "\n"
 "/* Theme Settings */\n"
 "#extraRightBox { background-color: rgb(44, 49, 58); }\n"
-"#themeSettingsTopDetail { background-color: rgb(120, 163, 255); }\n"
+"#themeSettingsTopDetail { background-color: rgb(189, 147, 249); }\n"
 "\n"
 "/* Bottom Bar */\n"
 "#bottomBar { background-color: rgb(44, 49, 58); }\n"
@@ -226,7 +234,7 @@ class Ui_MainWindow(object):
 "	background-color: rgb(40, 44, 52);\n"
 "}\n"
 "#contentSettings .QPushButton:pressed {	\n"
-"	background-color: rgb(120, 163, 255);\n"
+"	background-color: rgb(189, 147, 249);\n"
 "	color: rgb"
                         "(255, 255, 255);\n"
 "}\n"
@@ -247,7 +255,7 @@ class Ui_MainWindow(object):
 "	gridline-color: rgb(44, 49, 60);\n"
 "}\n"
 "QTableWidget::item:selected{\n"
-"	background-color: rgb(120, 163, 255);\n"
+"	background-color: rgb(189, 147, 249);\n"
 "}\n"
 "QHeaderView::section{\n"
 "	background-color: rgb(33, 37, 43);\n"
@@ -282,7 +290,7 @@ class Ui_MainWindow(object):
 "	border: 2px solid rgb(33, 37, 43);\n"
 "	padding-left: 10px;\n"
 "	selection-color: rgb(255, 255, 255);\n"
-"	selection-background-color: #1449a2;\n"
+"	selection-background-color: rgb(255, 121, 198);\n"
 "}\n"
 "QLineEdit:hover {\n"
 "	border: 2px solid rgb(64, 71, 88);\n"
@@ -298,7 +306,8 @@ class Ui_MainWindow(object):
 "	border-radius: 5px;\n"
 "	padding: 10px;\n"
 "	selection-color: rgb(255, 255, 255);\n"
-"	selection-background-color: #1449a2;\n"
+"	selection-background-c"
+                        "olor: rgb(255, 121, 198);\n"
 "}\n"
 "QPlainTextEdit  QScrollBar:vertical {\n"
 "    width: 8px;\n"
@@ -456,7 +465,7 @@ class Ui_MainWindow(object):
 "	background-repeat: no-reperat;\n"
 " }\n"
 "QComboBox QAbstractItemView {\n"
-"	color: #1449a2;	\n"
+"	color: rgb(255, 121, 198);	\n"
 "	background-color: rgb(33, 37, 43);\n"
 "	padding: 10px;\n"
 "	selection-background-color: rgb(39, 44, 54);\n"
@@ -486,7 +495,7 @@ class Ui_MainWindow(object):
 "    background-color: rgb(195, 155, 255);\n"
 "}\n"
 "QSlider::handle:horizontal:pressed {\n"
-"    background-color: #1449a2;\n"
+"    background-color: rgb(255, 121, 198);\n"
 "}\n"
 "\n"
 "QSlider::groove:vertical {\n"
@@ -510,19 +519,20 @@ class Ui_MainWindow(object):
 "    background-color: rgb(195, 155, 255);\n"
 "}\n"
 "QSlider::handle:vertical:pressed {\n"
-"    background-color: #1449a2;\n"
+"    background-color: rgb(255, 121, 198);\n"
 "}\n"
 "\n"
 "/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
 "CommandLinkButton */\n"
-"QCommandLinkButton {	\n"
-"	color: #1449a2;\n"
+"QCommandLi"
+                        "nkButton {	\n"
+"	color: rgb(255, 121, 198);\n"
 "	border-radius: 5px;\n"
 "	padding: 5px;\n"
-"	color: #1449a2;\n"
+"	color: rgb(255, 170, 255);\n"
 "}\n"
 "QCommandLinkButton:hover {	\n"
-"	color: #1449a2;\n"
+"	color: rgb(255, 170, 255);\n"
 "	background-color: rgb(44, 49, 60);\n"
 "}\n"
 "QCommandLinkButton:pressed {	\n"
@@ -587,7 +597,6 @@ class Ui_MainWindow(object):
         self.titleLeftApp.setObjectName(u"titleLeftApp")
         self.titleLeftApp.setGeometry(QRect(70, 8, 160, 20))
         font1 = QFont()
-        font1.setFamily(u"Segoe UI Semibold")
         font1.setPointSize(12)
         font1.setBold(False)
         font1.setItalic(False)
@@ -598,7 +607,6 @@ class Ui_MainWindow(object):
         self.titleLeftDescription.setGeometry(QRect(70, 27, 160, 16))
         self.titleLeftDescription.setMaximumSize(QSize(16777215, 16))
         font2 = QFont()
-        font2.setFamily(u"Segoe UI")
         font2.setPointSize(8)
         font2.setBold(False)
         font2.setItalic(False)
@@ -674,18 +682,6 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_8.addWidget(self.btn_widgets)
 
-#        self.btn_new = QPushButton(self.topMenu)
-#        self.btn_new.setObjectName(u"btn_new")
-#        sizePolicy.setHeightForWidth(self.btn_new.sizePolicy().hasHeightForWidth())
-#        self.btn_new.setSizePolicy(sizePolicy)
-#        self.btn_new.setMinimumSize(QSize(0, 45))
-#        self.btn_new.setFont(font)
-#        self.btn_new.setCursor(QCursor(Qt.PointingHandCursor))
-#        self.btn_new.setLayoutDirection(Qt.LeftToRight)
-#        self.btn_new.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-file.png);")
-#
-#        self.verticalLayout_8.addWidget(self.btn_new)
-
         self.btn_save = QPushButton(self.topMenu)
         self.btn_save.setObjectName(u"btn_save")
         sizePolicy.setHeightForWidth(self.btn_save.sizePolicy().hasHeightForWidth())
@@ -713,29 +709,28 @@ class Ui_MainWindow(object):
 
         self.verticalMenuLayout.addWidget(self.topMenu, 0, Qt.AlignTop)
 
-#        self.bottomMenu = QFrame(self.leftMenuFrame)
-#        self.bottomMenu.setObjectName(u"bottomMenu")
-#        self.bottomMenu.setFrameShape(QFrame.NoFrame)
-#        self.bottomMenu.setFrameShadow(QFrame.Raised)
-#        self.verticalLayout_9 = QVBoxLayout(self.bottomMenu)
-#        self.verticalLayout_9.setSpacing(0)
-#        self.verticalLayout_9.setObjectName(u"verticalLayout_9")
-#        self.verticalLayout_9.setContentsMargins(0, 0, 0, 0)
-#
-#        self.toggleLeftBox = QPushButton(self.bottomMenu)
-#        self.toggleLeftBox.setObjectName(u"toggleLeftBox")
-#        sizePolicy.setHeightForWidth(self.toggleLeftBox.sizePolicy().hasHeightForWidth())
-#        self.toggleLeftBox.setSizePolicy(sizePolicy)
-#        self.toggleLeftBox.setMinimumSize(QSize(0, 45))
-#        self.toggleLeftBox.setFont(font)
-#        self.toggleLeftBox.setCursor(QCursor(Qt.PointingHandCursor))
-#        self.toggleLeftBox.setLayoutDirection(Qt.LeftToRight)
-#        self.toggleLeftBox.setStyleSheet(u"background-image: url(:/icons/images/icons/icon_settings.png);")
-#
-#        self.verticalLayout_9.addWidget(self.toggleLeftBox)
-#
-#
-#        self.verticalMenuLayout.addWidget(self.bottomMenu, 0, Qt.AlignBottom)
+        self.bottomMenu = QFrame(self.leftMenuFrame)
+        self.bottomMenu.setObjectName(u"bottomMenu")
+        self.bottomMenu.setFrameShape(QFrame.NoFrame)
+        self.bottomMenu.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_9 = QVBoxLayout(self.bottomMenu)
+        self.verticalLayout_9.setSpacing(0)
+        self.verticalLayout_9.setObjectName(u"verticalLayout_9")
+        self.verticalLayout_9.setContentsMargins(0, 0, 0, 0)
+        self.toggleLeftBox = QPushButton(self.bottomMenu)
+        self.toggleLeftBox.setObjectName(u"toggleLeftBox")
+        sizePolicy.setHeightForWidth(self.toggleLeftBox.sizePolicy().hasHeightForWidth())
+        self.toggleLeftBox.setSizePolicy(sizePolicy)
+        self.toggleLeftBox.setMinimumSize(QSize(0, 45))
+        self.toggleLeftBox.setFont(font)
+        self.toggleLeftBox.setCursor(QCursor(Qt.PointingHandCursor))
+        self.toggleLeftBox.setLayoutDirection(Qt.LeftToRight)
+        self.toggleLeftBox.setStyleSheet(u"background-image: url(:/icons/images/icons/icon_settings.png);")
+
+        self.verticalLayout_9.addWidget(self.toggleLeftBox)
+
+
+        self.verticalMenuLayout.addWidget(self.bottomMenu, 0, Qt.AlignBottom)
 
 
         self.verticalLayout_3.addWidget(self.leftMenuFrame)
@@ -972,7 +967,6 @@ class Ui_MainWindow(object):
         self.maximizeRestoreAppBtn.setMinimumSize(QSize(28, 28))
         self.maximizeRestoreAppBtn.setMaximumSize(QSize(28, 28))
         font3 = QFont()
-        font3.setFamily(u"Segoe UI")
         font3.setPointSize(10)
         font3.setBold(False)
         font3.setItalic(False)
@@ -1135,114 +1129,114 @@ class Ui_MainWindow(object):
         self.verticalLayout_19.setObjectName(u"verticalLayout_19")
         self.gridLayout_2 = QGridLayout()
         self.gridLayout_2.setObjectName(u"gridLayout_2")
-        # self.checkBox = QCheckBox(self.row_2)
-        # self.checkBox.setObjectName(u"checkBox")
-        # self.checkBox.setAutoFillBackground(False)
-        # self.checkBox.setStyleSheet(u"")
+        self.checkBox = QCheckBox(self.row_2)
+        self.checkBox.setObjectName(u"checkBox")
+        self.checkBox.setAutoFillBackground(False)
+        self.checkBox.setStyleSheet(u"")
 
-        # self.gridLayout_2.addWidget(self.checkBox, 0, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.checkBox, 0, 0, 1, 1)
 
-        # self.radioButton = QRadioButton(self.row_2)
-        # self.radioButton.setObjectName(u"radioButton")
-        # self.radioButton.setStyleSheet(u"")
+        self.radioButton = QRadioButton(self.row_2)
+        self.radioButton.setObjectName(u"radioButton")
+        self.radioButton.setStyleSheet(u"")
 
-        # self.gridLayout_2.addWidget(self.radioButton, 0, 1, 1, 1)
+        self.gridLayout_2.addWidget(self.radioButton, 0, 1, 1, 1)
 
-#         self.verticalSlider = QSlider(self.row_2)
-#         self.verticalSlider.setObjectName(u"verticalSlider")
-#         self.verticalSlider.setStyleSheet(u"")
-#         self.verticalSlider.setOrientation(Qt.Vertical)
-#
-#         self.gridLayout_2.addWidget(self.verticalSlider, 0, 2, 3, 1)
-#
-#         self.verticalScrollBar = QScrollBar(self.row_2)
-#         self.verticalScrollBar.setObjectName(u"verticalScrollBar")
-#         self.verticalScrollBar.setStyleSheet(u" QScrollBar:vertical { background: rgb(52, 59, 72); }\n"
-# " QScrollBar:horizontal { background: rgb(52, 59, 72); }")
-#         self.verticalScrollBar.setOrientation(Qt.Vertical)
-#
-#         self.gridLayout_2.addWidget(self.verticalScrollBar, 0, 4, 3, 1)
+        self.verticalSlider = QSlider(self.row_2)
+        self.verticalSlider.setObjectName(u"verticalSlider")
+        self.verticalSlider.setStyleSheet(u"")
+        self.verticalSlider.setOrientation(Qt.Vertical)
 
-#         self.scrollArea = QScrollArea(self.row_2)
-#         self.scrollArea.setObjectName(u"scrollArea")
-#         self.scrollArea.setStyleSheet(u" QScrollBar:vertical {\n"
-# "    background: rgb(52, 59, 72);\n"
-# " }\n"
-# " QScrollBar:horizontal {\n"
-# "    background: rgb(52, 59, 72);\n"
-# " }")
-#         self.scrollArea.setFrameShape(QFrame.NoFrame)
-#         self.scrollArea.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
-#         self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
-#         self.scrollArea.setWidgetResizable(True)
-#         self.scrollAreaWidgetContents = QWidget()
-#         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-#         self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 218, 218))
-#         self.scrollAreaWidgetContents.setStyleSheet(u" QScrollBar:vertical {\n"
-# "	border: none;\n"
-# "    background: rgb(52, 59, 72);\n"
-# "    width: 14px;\n"
-# "    margin: 21px 0 21px 0;\n"
-# "	border-radius: 0px;\n"
-# " }")
-#         self.horizontalLayout_11 = QHBoxLayout(self.scrollAreaWidgetContents)
-#         self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
-#         self.plainTextEdit = QPlainTextEdit(self.scrollAreaWidgetContents)
-#         self.plainTextEdit.setObjectName(u"plainTextEdit")
-#         self.plainTextEdit.setMinimumSize(QSize(200, 200))
-#         self.plainTextEdit.setStyleSheet(u"background-color: rgb(33, 37, 43);")
-#
-#         self.horizontalLayout_11.addWidget(self.plainTextEdit)
-#
-#         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
-#
-#         self.gridLayout_2.addWidget(self.scrollArea, 0, 5, 3, 1)
-#
-#         self.comboBox = QComboBox(self.row_2)
-#         self.comboBox.addItem("")
-#         self.comboBox.addItem("")
-#         self.comboBox.addItem("")
-#         self.comboBox.setObjectName(u"comboBox")
-#         self.comboBox.setFont(font)
-#         self.comboBox.setAutoFillBackground(False)
-#         self.comboBox.setStyleSheet(u"background-color: rgb(33, 37, 43);")
-#         self.comboBox.setIconSize(QSize(16, 16))
-#         self.comboBox.setFrame(True)
-#
-#         self.gridLayout_2.addWidget(self.comboBox, 1, 0, 1, 2)
-#
-#         self.horizontalScrollBar = QScrollBar(self.row_2)
-#         self.horizontalScrollBar.setObjectName(u"horizontalScrollBar")
-#         sizePolicy.setHeightForWidth(self.horizontalScrollBar.sizePolicy().hasHeightForWidth())
-#         self.horizontalScrollBar.setSizePolicy(sizePolicy)
-#         self.horizontalScrollBar.setStyleSheet(u" QScrollBar:vertical { background: rgb(52, 59, 72); }\n"
-# " QScrollBar:horizontal { background: rgb(52, 59, 72); }")
-#         self.horizontalScrollBar.setOrientation(Qt.Horizontal)
-#
-#         self.gridLayout_2.addWidget(self.horizontalScrollBar, 1, 3, 1, 1)
-#
-#         self.commandLinkButton = QCommandLinkButton(self.row_2)
-#         self.commandLinkButton.setObjectName(u"commandLinkButton")
-#         self.commandLinkButton.setCursor(QCursor(Qt.PointingHandCursor))
-#         self.commandLinkButton.setStyleSheet(u"")
-#         icon5 = QIcon()
-#         icon5.addFile(u":/icons/images/icons/cil-link.png", QSize(), QIcon.Normal, QIcon.Off)
-#         self.commandLinkButton.setIcon(icon5)
-#
-#         self.gridLayout_2.addWidget(self.commandLinkButton, 1, 6, 1, 1)
-#
-#         self.horizontalSlider = QSlider(self.row_2)
-#         self.horizontalSlider.setObjectName(u"horizontalSlider")
-#         self.horizontalSlider.setStyleSheet(u"")
-#         self.horizontalSlider.setOrientation(Qt.Horizontal)
-#
-#         self.gridLayout_2.addWidget(self.horizontalSlider, 2, 0, 1, 2)
-#
-#
-#         self.verticalLayout_19.addLayout(self.gridLayout_2)
-#
-#
-#         self.verticalLayout.addWidget(self.row_2)
+        self.gridLayout_2.addWidget(self.verticalSlider, 0, 2, 3, 1)
+
+        self.verticalScrollBar = QScrollBar(self.row_2)
+        self.verticalScrollBar.setObjectName(u"verticalScrollBar")
+        self.verticalScrollBar.setStyleSheet(u" QScrollBar:vertical { background: rgb(52, 59, 72); }\n"
+" QScrollBar:horizontal { background: rgb(52, 59, 72); }")
+        self.verticalScrollBar.setOrientation(Qt.Vertical)
+
+        self.gridLayout_2.addWidget(self.verticalScrollBar, 0, 4, 3, 1)
+
+        self.scrollArea = QScrollArea(self.row_2)
+        self.scrollArea.setObjectName(u"scrollArea")
+        self.scrollArea.setStyleSheet(u" QScrollBar:vertical {\n"
+"    background: rgb(52, 59, 72);\n"
+" }\n"
+" QScrollBar:horizontal {\n"
+"    background: rgb(52, 59, 72);\n"
+" }")
+        self.scrollArea.setFrameShape(QFrame.NoFrame)
+        self.scrollArea.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
+        self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollAreaWidgetContents = QWidget()
+        self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 224, 224))
+        self.scrollAreaWidgetContents.setStyleSheet(u" QScrollBar:vertical {\n"
+"	border: none;\n"
+"    background: rgb(52, 59, 72);\n"
+"    width: 14px;\n"
+"    margin: 21px 0 21px 0;\n"
+"	border-radius: 0px;\n"
+" }")
+        self.horizontalLayout_11 = QHBoxLayout(self.scrollAreaWidgetContents)
+        self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
+        self.plainTextEdit = QPlainTextEdit(self.scrollAreaWidgetContents)
+        self.plainTextEdit.setObjectName(u"plainTextEdit")
+        self.plainTextEdit.setMinimumSize(QSize(200, 200))
+        self.plainTextEdit.setStyleSheet(u"background-color: rgb(33, 37, 43);")
+
+        self.horizontalLayout_11.addWidget(self.plainTextEdit)
+
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+
+        self.gridLayout_2.addWidget(self.scrollArea, 0, 5, 3, 1)
+
+        self.comboBox = QComboBox(self.row_2)
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.setObjectName(u"comboBox")
+        self.comboBox.setFont(font)
+        self.comboBox.setAutoFillBackground(False)
+        self.comboBox.setStyleSheet(u"background-color: rgb(33, 37, 43);")
+        self.comboBox.setIconSize(QSize(16, 16))
+        self.comboBox.setFrame(True)
+
+        self.gridLayout_2.addWidget(self.comboBox, 1, 0, 1, 2)
+
+        self.horizontalScrollBar = QScrollBar(self.row_2)
+        self.horizontalScrollBar.setObjectName(u"horizontalScrollBar")
+        sizePolicy.setHeightForWidth(self.horizontalScrollBar.sizePolicy().hasHeightForWidth())
+        self.horizontalScrollBar.setSizePolicy(sizePolicy)
+        self.horizontalScrollBar.setStyleSheet(u" QScrollBar:vertical { background: rgb(52, 59, 72); }\n"
+" QScrollBar:horizontal { background: rgb(52, 59, 72); }")
+        self.horizontalScrollBar.setOrientation(Qt.Horizontal)
+
+        self.gridLayout_2.addWidget(self.horizontalScrollBar, 1, 3, 1, 1)
+
+        self.commandLinkButton = QCommandLinkButton(self.row_2)
+        self.commandLinkButton.setObjectName(u"commandLinkButton")
+        self.commandLinkButton.setCursor(QCursor(Qt.PointingHandCursor))
+        self.commandLinkButton.setStyleSheet(u"")
+        icon5 = QIcon()
+        icon5.addFile(u":/icons/images/icons/cil-link.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.commandLinkButton.setIcon(icon5)
+
+        self.gridLayout_2.addWidget(self.commandLinkButton, 1, 6, 1, 1)
+
+        self.horizontalSlider = QSlider(self.row_2)
+        self.horizontalSlider.setObjectName(u"horizontalSlider")
+        self.horizontalSlider.setStyleSheet(u"")
+        self.horizontalSlider.setOrientation(Qt.Horizontal)
+
+        self.gridLayout_2.addWidget(self.horizontalSlider, 2, 0, 1, 2)
+
+
+        self.verticalLayout_19.addLayout(self.gridLayout_2)
+
+
+        self.verticalLayout.addWidget(self.row_2)
 
         self.row_3 = QFrame(self.widgets)
         self.row_3.setObjectName(u"row_3")
@@ -1267,7 +1261,6 @@ class Ui_MainWindow(object):
         if (self.tableWidget.rowCount() < 16):
             self.tableWidget.setRowCount(16)
         font4 = QFont()
-        font4.setFamily(u"Segoe UI")
         __qtablewidgetitem4 = QTableWidgetItem()
         __qtablewidgetitem4.setFont(font4);
         self.tableWidget.setVerticalHeaderItem(0, __qtablewidgetitem4)
@@ -1378,18 +1371,17 @@ class Ui_MainWindow(object):
         self.verticalLayout.addWidget(self.row_3)
 
         self.stackedWidget.addWidget(self.widgets)
-#        self.new_page = QWidget()
-#        self.new_page.setObjectName(u"new_page")
-#        self.verticalLayout_20 = QVBoxLayout(self.new_page)
-#        self.verticalLayout_20.setObjectName(u"verticalLayout_20")
-        
-#        self.label = QLabel(self.new_page)
-#        self.label.setObjectName(u"label")
-#        self.label.setAlignment(Qt.AlignCenter)
-#
-#        self.verticalLayout_20.addWidget(self.label)
-#
-#        self.stackedWidget.addWidget(self.new_page)
+        self.new_page = QWidget()
+        self.new_page.setObjectName(u"new_page")
+        self.verticalLayout_20 = QVBoxLayout(self.new_page)
+        self.verticalLayout_20.setObjectName(u"verticalLayout_20")
+        self.label = QLabel(self.new_page)
+        self.label.setObjectName(u"label")
+        self.label.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_20.addWidget(self.label)
+
+        self.stackedWidget.addWidget(self.new_page)
 
         self.verticalLayout_15.addWidget(self.stackedWidget)
 
@@ -1492,7 +1484,6 @@ class Ui_MainWindow(object):
         self.creditsLabel.setObjectName(u"creditsLabel")
         self.creditsLabel.setMaximumSize(QSize(16777215, 16))
         font5 = QFont()
-        font5.setFamily(u"Segoe UI")
         font5.setBold(False)
         font5.setItalic(False)
         self.creditsLabel.setFont(font5)
@@ -1544,11 +1535,10 @@ class Ui_MainWindow(object):
         self.toggleButton.setText(QCoreApplication.translate("MainWindow", u"Hide", None))
         self.btn_home.setText(QCoreApplication.translate("MainWindow", u"Home", None))
         self.btn_widgets.setText(QCoreApplication.translate("MainWindow", u"Widgets", None))
-#        self.btn_new.setText(QCoreApplication.translate("MainWindow", u"New", None))
         self.btn_save.setText(QCoreApplication.translate("MainWindow", u"Save", None))
         self.btn_exit.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
-#        self.toggleLeftBox.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
-#        self.extraLabel.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
+        self.toggleLeftBox.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
+        self.extraLabel.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
 #if QT_CONFIG(tooltip)
         self.extraCloseColumnBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Close left box", None))
 #endif // QT_CONFIG(tooltip)
@@ -1560,14 +1550,14 @@ class Ui_MainWindow(object):
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Segoe UI'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600; color:#0066cc;\">SEMA VOC</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#ffffff;\">An interface created using Python and PySide</span></p>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600; color:#ff79c6;\">PyDracula</span></p>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#ffffff;\">An interface created using Python and PySide (support for PyQt), and with colors based on the Dracula theme created by Zeno Rocha.</span></p>\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-inde"
                         "nt:0; text-indent:0px;\"><span style=\" color:#ffffff;\">MIT License</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#bd93f9;\">Created by: Kevin Choi</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600; color:#495474;\">Convert UI</span></p>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#bd93f9;\">Created by: Wanderson M. Pimenta</span></p>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600; color:#ff79c6;\">Convert UI</span></p>\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt; color:#ffffff;\">pyside6-uic main.ui &gt; ui_main.py</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600; color:#495474;\">Convert QRC</span></p>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600; color:#ff79c6;\">Convert QRC</span></p>\n"
 "<p align=\"center\" "
                         "style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt; color:#ffffff;\">pyside6-rcc resources.qrc -o resources_rc.py</span></p></body></html>", None))
         self.titleRightInfo.setText(QCoreApplication.translate("MainWindow", u"PyDracula APP - Theme with colors based on Dracula for Python.", None))
@@ -1591,16 +1581,15 @@ class Ui_MainWindow(object):
         self.lineEdit.setText("")
         self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Type here", None))
         self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Open", None))
+        self.labelVersion_3.setText(QCoreApplication.translate("MainWindow", u"Label description", None))
+        self.checkBox.setText(QCoreApplication.translate("MainWindow", u"CheckBox", None))
+        self.radioButton.setText(QCoreApplication.translate("MainWindow", u"RadioButton", None))
+        self.comboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"Test 1", None))
+        self.comboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"Test 2", None))
+        self.comboBox.setItemText(2, QCoreApplication.translate("MainWindow", u"Test 3", None))
 
-        # self.labelVersion_3.setText(QCoreApplication.translate("MainWindow", u"Label description", None))
-        # self.checkBox.setText(QCoreApplication.translate("MainWindow", u"CheckBox", None))
-        # self.radioButton.setText(QCoreApplication.translate("MainWindow", u"RadioButton", None))
-        # self.comboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"Test 1", None))
-        # self.comboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"Test 2", None))
-        # self.comboBox.setItemText(2, QCoreApplication.translate("MainWindow", u"Test 3", None))
-
-        # self.commandLinkButton.setText(QCoreApplication.translate("MainWindow", u"Link Button", None))
-        # self.commandLinkButton.setDescription(QCoreApplication.translate("MainWindow", u"Link description", None))
+        self.commandLinkButton.setText(QCoreApplication.translate("MainWindow", u"Link Button", None))
+        self.commandLinkButton.setDescription(QCoreApplication.translate("MainWindow", u"Link description", None))
         ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"0", None));
         ___qtablewidgetitem1 = self.tableWidget.horizontalHeaderItem(1)
@@ -1645,22 +1634,20 @@ class Ui_MainWindow(object):
         __sortingEnabled = self.tableWidget.isSortingEnabled()
         self.tableWidget.setSortingEnabled(False)
         ___qtablewidgetitem20 = self.tableWidget.item(0, 0)
-        ___qtablewidgetitem20.setText(QCoreApplication.translate("MainWindow", u"ID", None));
+        ___qtablewidgetitem20.setText(QCoreApplication.translate("MainWindow", u"Test", None));
         ___qtablewidgetitem21 = self.tableWidget.item(0, 1)
-        ___qtablewidgetitem21.setText(QCoreApplication.translate("MainWindow", u"Date", None));
+        ___qtablewidgetitem21.setText(QCoreApplication.translate("MainWindow", u"Text", None));
         ___qtablewidgetitem22 = self.tableWidget.item(0, 2)
-        ___qtablewidgetitem22.setText(QCoreApplication.translate("MainWindow", u"VOC1", None));
+        ___qtablewidgetitem22.setText(QCoreApplication.translate("MainWindow", u"Cell", None));
         ___qtablewidgetitem23 = self.tableWidget.item(0, 3)
-        ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"VOC2", None));
-
-        
+        ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Line", None));
         self.tableWidget.setSortingEnabled(__sortingEnabled)
 
-#        self.label.setText(QCoreApplication.translate("MainWindow", u"NEW PAGE TEST", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"NEW PAGE TEST", None))
         self.btn_message.setText(QCoreApplication.translate("MainWindow", u"Message", None))
         self.btn_print.setText(QCoreApplication.translate("MainWindow", u"Print", None))
         self.btn_logout.setText(QCoreApplication.translate("MainWindow", u"Logout", None))
-        self.creditsLabel.setText(QCoreApplication.translate("MainWindow", u"By: Kevin Choi", None))
-        self.version.setText(QCoreApplication.translate("MainWindow", u"v1.0.0", None))
+        self.creditsLabel.setText(QCoreApplication.translate("MainWindow", u"By: Wanderson M. Pimenta", None))
+        self.version.setText(QCoreApplication.translate("MainWindow", u"v1.0.3", None))
     # retranslateUi
 

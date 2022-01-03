@@ -84,7 +84,7 @@ class VOC_TopicLabeler(pl.LightningModule):
         self.log("test_loss", loss, prog_bar=True, logger=True)
         return loss
 
-    def predict_step(self, batch, batch_idx, dataset_idx, dataloader_idx=0):
+    def predict_step(self, batch, batch_idx, dataloader_idx=0):
         input_ids = batch["input_ids"]
         attention_mask = batch["attention_mask"]
         labels = batch["labels"]
